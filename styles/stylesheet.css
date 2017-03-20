@@ -3,7 +3,9 @@ body {
 	font-size: 1em;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: lighter;;
+	font-weight: normal;
+  line-height: 1.5em;
+  letter-spacing: .1em;
 	background: #fff;
   display: flex;
   flex: 1;
@@ -40,11 +42,11 @@ p {
 
 h1 {
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 1.75rem;
   font-weight: 300;
 }
 
@@ -69,12 +71,14 @@ img {
 
 #container {
   width: 45rem;
+  display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
 }
 
 .booking h3 {
   color: red;
+  text-decoration: underline;
   float: right;
   margin-bottom: 2rem;
 }
@@ -95,7 +99,7 @@ header h1{
   padding-top: 5rem;
 }
 
-header h2 {
+header h3 {
   color: silver;
 }
 
@@ -117,25 +121,68 @@ nav a {
 }
 
 main {
+  width: 100%
+}
+
+ /** section {
+  font-size: 1rem;
   float: left;
+  width: 57%;
+float: left;
   display: flex;
   flex-wrap: nowrap;
-  padding: 2em 1em;
+  flex: 0 0 95%;
+  padding: 2em 0 1em 0;
+} **/
+
+article {
+  font-size: 18px;
+  font-weight: 300;
+  position: relative;
+  float: left;
+  width: 55%;
+  padding-top: 1rem;
+  margin-left: 1em;
+}
+.testimonials p {
+  font-style: italic;
+  line-height: 1.2em;
 }
 
 aside {
+  padding: .5em;
+  width: 33%;
+  font-size: 1rem;
+  line-height: 1rem;
   float: right;
-  margin-left: 1em;
+  margin: 1.5em .7em .7em .7em;
   border: .1rem;
   border-color: black;
   border-style: solid;
+}
+
+aside h3 {
+  font-size: 20px;
   text-align: center;
-  line-height: 1rem;
+  line-height: .2em;
+}
+
+aside img {
+  text-align: center;
+}
+aside span .name {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+aside span .comment {
+  float: left;
 }
 
 .redtext {
   color: red;
   text-decoration: underline;
+  float: right;
 }
 
 footer {
@@ -147,9 +194,14 @@ footer {
 }
 
 .address {
-text-align: left;
+  font-weight: 100;
+  text-align: left;
+  letter-spacing: .5px;
+  padding-left: .5em;
 }
 
 .copyright {
+  font-weight: 100;
   text-align: center;
+  letter-spacing: .5px;
 }
