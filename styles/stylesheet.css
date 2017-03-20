@@ -121,7 +121,9 @@ nav a {
 }
 
 main {
-  width: 100%
+  width: 100%;
+  margin-left: 1em;
+  padding-top: 1rem;
 }
 
  /** section {
@@ -140,49 +142,63 @@ article {
   font-weight: 300;
   position: relative;
   float: left;
-  width: 55%;
-  padding-top: 1rem;
-  margin-left: 1em;
+  width: 57%;
 }
+
 .testimonials p {
   font-style: italic;
   line-height: 1.2em;
 }
 
 aside {
-  padding: .5em;
-  width: 33%;
-  font-size: 1rem;
-  line-height: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 37%;
   float: right;
-  margin: 1.5em .7em .7em .7em;
+  margin: .5em 1em 1em 1em;
   border: .1rem;
   border-color: black;
   border-style: solid;
 }
 
-aside h3 {
-  font-size: 20px;
-  text-align: center;
-  line-height: .2em;
+aside p {
+  font-size: 16px;
+  line-height: 1.2rem;
+  width: 100%;
+  padding-top: 0;
 }
 
-aside img {
+aside h3 {
   text-align: center;
+  margin: 1.5em 0 .5em 0;
 }
-aside span .name {
+
+aside .aside-heading {
+  font-size: 24px;
+  line-height: .1em;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  width: 140%;
+  margin: 0 1.5em;
+}
+
+figure figcaption {
   font-size: 20px;
   font-weight: 300;
-}
-
-aside span .comment {
-  float: left;
+  text-align: center;
+  margin: .5em 0 0 0;
 }
 
 .redtext {
   color: red;
   text-decoration: underline;
   float: right;
+  position: relative;
+  padding-right: 1em;
 }
 
 footer {
