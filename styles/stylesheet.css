@@ -107,6 +107,38 @@ article {
   width: 57%;
 }
 
+.profiles {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.profile-name {
+  text-align: center;
+}
+
+.profile-bio {
+  font-size: .9rem;
+  font-weight: 300;
+  line-height: 1rem;
+  text-align: center;
+}
+
+.profile-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.profile-row .profiles {
+  flex: 1 0 50%;
+}
+
+.flex .profiles:first-child
+{
+   flex: 0 1 100%;
+}
+
 .testimonials p {
   font-style: italic;
   line-height: 1.2em;
