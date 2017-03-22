@@ -1,3 +1,5 @@
+
+
 body {
 	font-family: sans-serif;
 	font-size: 1em;
@@ -5,53 +7,19 @@ body {
 	font-variant: normal;
 	font-weight: normal;
   line-height: 1.5em;
-  letter-spacing: .1em;
-	background: #fff;
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-}
-
-a {
-
-}
-
-a:link {
-
-}
-
-a:visited {
-
-}
-
-a:hover {
-
-}
-
-a:active {
-
 }
 
 a[href^="mailto"] {
     color: red;
 }
 
-p {
-
-}
-
 h1 {
-    font-size: 3em;
-    font-weight: 200;
-}
-
-h2 {
   font-size: 1.75rem;
   font-weight: 400;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 300;
 }
 
@@ -70,47 +38,53 @@ img {
 }
 
 #container {
-  width: 45rem;
-  display: -webkit-flex;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
 
-.booking h3 {
-  color: red;
-  text-decoration: underline;
-  float: right;
-  margin-bottom: 2rem;
-}
-
 header {
   background-color: #000;
-  color: #fff;
-  width: 100%;
+  width: 47rem;
   height: 13rem;
   padding-left: 2rem;
   padding-right: 1rem;
   float: left;
-  line-height: 1rem;
-
+  line-height: .1rem;
 }
 
-header h1{
+.booking {
+  color: red;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-decoration: underline;
+  float: right;
+  margin: 2rem 0 2rem 0;
+}
+
+.title {
+  color: #fff;
   padding-top: 5rem;
+  font-size: 3rem;
+  font-weight: 200;
 }
 
-header h3 {
+.sub-title {
   color: silver;
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
 nav {
   background-color: silver;
-  width: 100%;
-  font-size: 20px;
+  width: 47rem;
+  font-size: 1.25rem;
   text-align: center;
   list-style-type: none;
   padding: .5rem 1rem .5rem 2rem;
   display: flex;
+  flex-direction: row;
   box-shadow: 0 .1em .2em silver;
 }
 
@@ -121,16 +95,18 @@ nav a {
 }
 
 main {
-  width: 100%;
-  margin-left: 1em;
-  padding-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  width: 50rem;
+}
+
+section {
+  padding: 1rem 0 0 1rem;
 }
 
 article {
   font-size: 18px;
   font-weight: 300;
-  position: relative;
-  float: left;
   width: 57%;
 }
 
@@ -141,71 +117,79 @@ article {
 
 aside {
   display: flex;
-  flex-wrap: nowrap;
   flex-direction: column;
-  width: 37%;
-  float: right;
-  margin: .5em 1em 1em 1em;
+  width: 30%;
   border: .1rem;
   border-color: black;
   border-style: solid;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 0 1rem 1rem 1rem;
 }
 
-aside p {
-  font-size: 16px;
-  line-height: 1.2rem;
-  width: 100%;
-  padding: 0 .5em;
-}
-
-aside h3 {
+.feature-title {
+  font-size: 1.3rem;
+  font-weight: 400;
   text-align: center;
-  margin: 1.5em 0 .5em 0;
+  margin: 1.5rem 0 .5em 0;
 }
 
-aside .aside-heading {
-  font-size: 24px;
-  line-height: .1em;
+.feature-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.col-1 {
+  width: 55%;
+}
+
+.col-1 p {
+  margin-bottom: 0;
+}
+
+.feature-subtitle {
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 1.5rem 0 .5rem 0;
+}
+
+aside a {
+  text-align: right;
+  color: red;
+  text-decoration: underline;
 }
 
 figure {
-  display: flex;
-  flex-direction: column;
-  width: 140%;
-  margin: 0 1.5em;
+  margin: auto 0;
+  padding: 0 1rem;
 }
 
-figure figcaption {
-  font-size: 20px;
+figcaption {
+  font-size: 1.25rem;
   font-weight: 300;
   text-align: center;
-  margin: .5em 0 0 0;
-}
-
-.redtext {
-  color: red;
-  text-decoration: underline;
-  float: right;
-  position: relative;
-  padding-right: .5em
+  margin: .5rem 0 .5rem 0;
 }
 
 footer {
   background-color: #000;
   color: #fff;
-  width: 100%;
   padding: 1em .5em .5em .5em;
   line-height: .5rem;
 }
 
-.address {
+address {
+  width: 50rem;
+  font-style: normal;
   font-weight: 100;
   text-align: left;
   letter-spacing: .5px;
   padding-left: .5em;
 }
 
-.copyright {
+.footer-bottom {
   font-weight: 100;
   text-align: center;
   letter-spacing: .5px;
