@@ -244,7 +244,7 @@ form label {
     display:block;
 }
 
-form #submit-button {
+form .submit-button {
     width: 5rem;
     color:#FFF;
     border:none;
@@ -254,11 +254,11 @@ form #submit-button {
     background-color: silver;
 }
 
-form #submit-button:hover {
+form .submit-button:hover {
     background-color: red;
 }
 
-form #submit-button:active {
+form .submit-button:active {
     position:relative;
     top:1px;
 }
