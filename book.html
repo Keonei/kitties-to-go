@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Kitties To Go</title>
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script type="text/javascript" src="scripts/script.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <a href="book.html" class="booking">Open right MEOW! Book a cat><i class="material-icons">&#xe5c8</i></a>
+        <a href="index.html" class="home" title="home">
+        <p class="title">Kitties To Go!</p>
+        <p class="sub-title">Seattle's Premiere drive-thru cat rentals</p>
+        </a>
+      </header>
+        <nav>
+          <a href="./about" title="about">About</a>
+          <a href="./rates" title="rates">Rates</a>
+          <a href="./liability" title="liability release">Liability Release</a>
+          <a href="profiles.html" title="kitty profiles">Kitty Profiles</a>
+          <a href="book.html" title="book a cat">Book a Cat</a>
+        </nav>
+        <main>
+          <form>
+            <label for="name">Name: <span class="required">*</span></label>
+            <input type="text" name="first" placeholder="First" required="required" autofocus="autofocus" />
+            <input type="text" name="last" placeholder="Last" required="required" autofocus="autofocus" />
+
+            <label for="name">Address: </label>
+            <input type="text" name="address" placeholder="Street" autofocus="autofocus" />
+            <input type="text" name="address2" autofocus="autofocus" />
+
+            <label for="name">City/State/Zip: </label>
+            <input type="text" name="city" placeholder="City" autofocus="autofocus" />
+            <input type="text" name="state" placeholder="State" autofocus="autofocus" />
+            <input type="text" name="zipcode" placeholder="Zip" autofocus="autofocus" />
+
+            <label for="email">Email Address: <span class="required">*</span></label>
+            <input type="email" iname="email"  placeholder="johndoe@example.com" required="required" />
+            <label for="telephone">Telephone: <span class="required">*</span></label>
+            <input type="tel" name="telephone" />
+
+            <label for="kitty">Furry Pal</label>
+            <input type="kitty" name="kitty" placeholder="Name of Cat" autofocus="autofocus" />
+
+            <label for="message">Message: </label>
+            <textarea name="message" placeholder="Special requirements if any" ></textarea>
+
+            <input type="submit" value="MEOW!" id="submit-button" />
+          </form>
+        <aside>
+          <p class="feature-title">Reservation</p>
+          <div id="calendar-container">
+            <div id="calendar-header">
+               <span id="calendar-month-year"></span>
+            </div>
+            <div id="calendar-dates">
+            </div>
+          </div>
+          <label for="date">Date: <span class="required">*</span></label>
+          <input type="text" name="date" placeholder="xx/xx/xxxx" required="required" autofocus="autofocus" />
+          <label for="time">Time Frame: <span class="required">*</span></label>
+          <input type="text" name="time" placeholder="00:00 - 00:00" required="required" autofocus="autofocus" />
+          <div class="feature">
+            <p class="feature-subtitle">Fan Favorite</p>
+            <figure>
+              <img src="images/picklecat.jpg" alt="tate">
+                <figcaption>Odin</figcaption>
+            </figure>
+            <p>Cupcake ipsum dolor sit amet. Powder chupa chups cake apple pie.
+              Pie soufflé tiramisu candy biscuit pie apple pie marzipan.</p>
+          </div>
+        </aside>
+      </main>
+      <footer>
+        <address>
+          <p>Kitties To Go!</p>
+          <p>(555) 867-5309</p>
+          <a href="mailto:kittiestogo@catmail.com,">kittiestogo@catmail.com</a>
+        </address>
+        <div class="footer-bottom">
+          <p>Please Cat Responsibly</p>
+          <p>copyright 2016 Kitties To Go!, LLC</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
